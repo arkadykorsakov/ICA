@@ -54,7 +54,9 @@ window.addEventListener('click', function (event) {
 // <FORM>
 document.addEventListener('DOMContentLoaded', function () {
   const form = document.getElementById('form')
-  form.addEventListener('submit', formSend)
+  if (form) {
+    form.addEventListener('submit', formSend)
+  }
 
   async function formSend(e) {
     e.preventDefault()
@@ -93,24 +95,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
       formRemoveError(input)
       errorItem.innerHTML = ''
-
-      if (input.classList.contains('_email')) {
-        if (emailTest(input)) {
-          formAddError(input)
-          errorItem.innerHTML = 'Некорректный email'
-          error++
-        }
-      } else if (input.classList.contains('_tel')) {
-        if (telTest(input)) {
-          formAddError(input)
-          errorItem.innerHTML = 'Некорректный номер'
-          error++
-        }
+      if (input.value === '') {
+        formAddError(input)
+        errorItem.innerHTML = 'Поле должно быть заполено'
+        error++
       } else {
-        if (input.value === '') {
-          formAddError(input)
-          errorItem.innerHTML = 'Поле должно быть заполено'
-          error++
+        if (input.classList.contains('_email')) {
+          if (emailTest(input)) {
+            formAddError(input)
+            errorItem.innerHTML = 'Некорректный email'
+            error++
+          }
+        } else if (input.classList.contains('_tel')) {
+          if (telTest(input)) {
+            formAddError(input)
+            errorItem.innerHTML = 'Некорректный номер'
+            error++
+          }
         }
       }
     }
