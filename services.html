@@ -49,48 +49,34 @@
                   <a href="about.html" class="menu__link">О нас</a>
                 </li>
                 <li class="menu__item">
-                  <a href="" class="menu__link">Фотогалерея</a>
-                </li>
-                <li class="menu__item">
                   <a href="siberian_falconry.html" class="menu__link"
                     >Siberian Falconry
                   </a>
                 </li>
                 <li class="menu__item">
-                  <a href="services.html" class="menu__link">Инвестиции</a>
+                  <a href="investitions.html" class="menu__link">Инвестиции</a>
                 </li>
                 <li class="menu__item">
-                  <a href="" class="menu__link">Услуги </a>
+                  <a href="services.html" class="menu__link">Услуги </a>
                 </li>
               </ul>
             </nav>
-            <div class="menu__select-lang select">
-              <div class="select__label">
+            <div class="menu__lang select">
+              <button class="select__label">
                 <div class="select__title">RU</div>
                 <span class="select__arrow"></span>
-              </div>
-              <div class="select__options">
-                <div class="select__option option">
-                  <label for="ru" class="option__label">RU</label>
-                  <input
-                    type="radio"
-                    class="option__input"
-                    name="language"
-                    value="ru"
-                    id="ru"
-                  />
-                </div>
-                <div class="select__option option">
-                  <label for="en" class="option__label">EN</label>
-                  <input
-                    type="radio"
-                    class="option__input"
-                    name="language"
-                    value="en"
-                    id="en"
-                  />
-                </div>
-              </div>
+              </button>
+              <ul class="select__options">
+                <li class="select__option" data-value="ru">RU</li>
+                <li class="select__option" data-value="en">EN</li>
+              </ul>
+              <input
+                type="text"
+                name="lang"
+                value="ru"
+                class="select__input"
+                id="lang"
+              />
             </div>
             <button class="menu__icon icon-menu">
               <span></span>
@@ -102,6 +88,9 @@
         <section class="section section_light services">
           <div class="services__container container">
             <h2 class="services__title title">Наши услуги</h2>
+            <h3 class="services__subtitle subtitle">
+              в Объединенных Арабских Эмиратах
+            </h3>
             <div class="services__items items">
               <div class="services__item item">
                 <div class="item__body">
@@ -229,9 +218,112 @@
             </div>
           </div>
         </section>
-        <section class="section section_dark partners">
+        <section class="section section_dark question" id="question">
+          <div class="container question__container">
+            <h2 class="question__title title title_light">Заказать услугу</h2>
+            <h3 class="question__subtitle subtitle">
+              Выберете услугу и получите бесплатную консультацию онлайн
+            </h3>
+            <div class="question__form form">
+              <form action="#" method="POST" class="form__body" id="form">
+                <div class="form__items">
+                  <div class="form__item">
+                    <label for="name" class="form__label">Имя</label>
+                    <input
+                      id="name"
+                      type="text"
+                      class="form__input _req"
+                      name="name"
+                    />
+                    <div class="form__error">Ошибка</div>
+                  </div>
+                  <div class="form__item">
+                    <label for="email" class="form__label">Email</label>
+                    <input
+                      id="email"
+                      type="text"
+                      class="form__input _req _email"
+                      name="email"
+                    />
+                    <div class="form__error">Ошибка</div>
+                  </div>
+                  <div class="form__item">
+                    <label for="tel" class="form__label">Телефон</label>
+                    <input
+                      id="tel"
+                      type="text"
+                      class="form__input _req _tel"
+                      name="tel"
+                    />
+                    <div class="form__error">Ошибка</div>
+                  </div>
+                </div>
+
+                <div class="form__item">
+                  <label class="form__label">Услуга</label>
+                  <div class="form__select select">
+                    <button class="select__label form__input" type="button">
+                      <div class="select__title">Выберите услугу</div>
+                      <span class="select__arrow"></span>
+                    </button>
+                    <ul class="select__options">
+                      <li class="select__option">
+                        Инвестирование в промышленную, коммерческую и жилую
+                        недвижимость ОАЭ
+                      </li>
+                      <li class="select__option">
+                        Презентация вашей продукции и вывод на рынок ОАЭ
+                      </li>
+                      <li class="select__option">
+                        Решение административных вопросов в ОАЭ
+                      </li>
+                      <li class="select__option">
+                        Привлечение инвестиций (в стартапы, действующий бизнес,
+                        инновационные разработки, технологии)
+                      </li>
+                      <li class="select__option">
+                        Нетворкинг, бизнес-сообщества, в том числе закрытые и
+                        ТОПовые бизнес-клубы Дубаи
+                      </li>
+                      <li class="select__option">Стратегический маркетинг</li>
+                      <li class="select__option">
+                        Функции представительства вашей компании в ОАЭ
+                      </li>
+                      <li class="select__option">
+                        Релокация (масштабирование) бизнеса
+                      </li>
+                      <li class="select__option">
+                        Инвестирование в инновационные бизнес-проекты,
+                        реализуемые в ОАЭ
+                      </li>
+                      <li class="select__option">
+                        Организация бизнес-миссий, инвест-туров, индивидуальных
+                        деловых встреч
+                      </li>
+                      <li class="select__option">
+                        Маркетинговые исследования в ОАЭ
+                      </li>
+                      <li class="select__option option">
+                        Приобретение земли и строительство в ОАЭ
+                      </li>
+                    </ul>
+                    <input
+                      type="text"
+                      name="service"
+                      value=""
+                      class="select__input _req"
+                    />
+                  </div>
+                  <div class="form__error">Ошибка</div>
+                </div>
+                <button class="btn btn_transparent">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section class="section partners">
           <div class="partners__container container">
-            <h2 class="partners__title title title_light">Наши партнеры</h2>
+            <h2 class="partners__title title">Наши партнеры</h2>
             <div class="partners__items items">
               <div class="partners__item item">
                 <div class="item__body">
@@ -279,7 +371,7 @@
             </div>
           </div>
         </section>
-        <section class="section services-partners">
+        <section class="section section_light services-partners">
           <div class="services-partners__container container">
             <h2 class="services-partners__title title">
               Услуги наших партнеров

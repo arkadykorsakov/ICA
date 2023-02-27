@@ -49,48 +49,34 @@
                   <a href="about.html" class="menu__link">О нас</a>
                 </li>
                 <li class="menu__item">
-                  <a href="" class="menu__link">Фотогалерея</a>
-                </li>
-                <li class="menu__item">
                   <a href="siberian_falconry.html" class="menu__link"
                     >Siberian Falconry
                   </a>
                 </li>
                 <li class="menu__item">
-                  <a href="" class="menu__link">Инвестиции</a>
+                  <a href="investitions.html" class="menu__link">Инвестиции</a>
                 </li>
                 <li class="menu__item">
                   <a href="services.html" class="menu__link">Услуги </a>
                 </li>
               </ul>
             </nav>
-            <div class="menu__select-lang select">
-              <div class="select__label">
+            <div class="menu__lang select">
+              <button class="select__label">
                 <div class="select__title">RU</div>
                 <span class="select__arrow"></span>
-              </div>
-              <div class="select__options">
-                <div class="select__option option">
-                  <label for="ru" class="option__label">RU</label>
-                  <input
-                    type="radio"
-                    class="option__input"
-                    name="language"
-                    value="ru"
-                    id="ru"
-                  />
-                </div>
-                <div class="select__option option">
-                  <label for="en" class="option__label">EN</label>
-                  <input
-                    type="radio"
-                    class="option__input"
-                    name="language"
-                    value="en"
-                    id="en"
-                  />
-                </div>
-              </div>
+              </button>
+              <ul class="select__options">
+                <li class="select__option" data-value="ru">RU</li>
+                <li class="select__option" data-value="en">EN</li>
+              </ul>
+              <input
+                type="text"
+                name="lang"
+                value="ru"
+                class="select__input"
+                id="lang"
+              />
             </div>
             <button class="menu__icon icon-menu">
               <span></span>

@@ -49,48 +49,34 @@
                   <a href="about.html" class="menu__link">О нас</a>
                 </li>
                 <li class="menu__item">
-                  <a href="" class="menu__link">Фотогалерея</a>
-                </li>
-                <li class="menu__item">
                   <a href="siberian_falconry.html" class="menu__link"
                     >Siberian Falconry
                   </a>
                 </li>
                 <li class="menu__item">
-                  <a href="" class="menu__link">Инвестиции</a>
+                  <a href="investitions.html" class="menu__link">Инвестиции</a>
                 </li>
                 <li class="menu__item">
                   <a href="services.html" class="menu__link">Услуги </a>
                 </li>
               </ul>
             </nav>
-            <div class="menu__select-lang select">
-              <div class="select__label">
+            <div class="menu__lang select">
+              <button class="select__label">
                 <div class="select__title">RU</div>
                 <span class="select__arrow"></span>
-              </div>
-              <div class="select__options">
-                <div class="select__option option">
-                  <label for="ru" class="option__label">RU</label>
-                  <input
-                    type="radio"
-                    class="option__input"
-                    name="language"
-                    value="ru"
-                    id="ru"
-                  />
-                </div>
-                <div class="select__option option">
-                  <label for="en" class="option__label">EN</label>
-                  <input
-                    type="radio"
-                    class="option__input"
-                    name="language"
-                    value="en"
-                    id="en"
-                  />
-                </div>
-              </div>
+              </button>
+              <ul class="select__options">
+                <li class="select__option" data-value="ru">RU</li>
+                <li class="select__option" data-value="en">EN</li>
+              </ul>
+              <input
+                type="text"
+                name="lang"
+                value=""
+                class="select__input"
+                id="lang"
+              />
             </div>
             <button class="menu__icon icon-menu">
               <span></span>
@@ -102,7 +88,7 @@
         <section class="main-home">
           <div class="main-home__container container">
             <div class="main-home__content">
-              <h1 class="main-home__title">
+              <h1 class="main-home__title" data-lang-title>
                 Мы делаем то, <br />
                 чего не могут другие
               </h1>
@@ -190,83 +176,81 @@
                   ОАЭ)
                 </p>
               </div>
-            </div>
-          </div>
-        </section>
-        <section class="section section_light social">
-          <div class="container social__container">
-            <div class="social__items">
-              <div class="social__item">
-                <a href="mailto:maxdom2002@mail.ru" class="social__label"
-                  >maxdom2002@mail.ru</a
-                >
-                <div class="social__links">
-                  <a
-                    href="mailto:maxdom2002@mail.ru"
-                    class="social__link mailru"
-                  ></a>
-                </div>
-              </div>
-              <div class="social__item">
-                <a
-                  href="mailto:
-					maxdom969@gmail.com
-					"
-                  class="social__label"
-                >
-                  maxdom969@gmail.com
-                </a>
-                <div class="social__links">
-                  <a
-                    href="mailto:
-					  maxdom969@gmail.com
-					  "
-                    class="social__link gmail"
-                  ></a>
-                </div>
-              </div>
-              <div class="social__item">
-                <a href="tel:+79135329160" class="social__label"
-                  >+7 (913) 532-91-60</a
-                >
-                <div class="social__links">
-                  <a
-                    href="https://t.me/MaxDom2002"
-                    class="social__link telegram"
-                    target="_blank"
-                  ></a>
-                  <a
-                    href="https://api.whatsapp.com/send?phone=79135329160"
-                    class="social__link whatsapp"
-                    target="_blank"
-                  ></a>
-                  <a
-                    href="https://vibr.cc/79135329160"
-                    class="social__link viber"
-                    target="_blank"
-                  ></a>
-                </div>
-              </div>
-              <div class="social__item">
-                <div class="social__label social__label_notlink">
-                  DomoratskiyMaxim
-                </div>
-                <div class="social__links">
-                  <a
-                    href="https://www.facebook.com/DomoratskiyMaxim"
-                    class="social__link facebook"
-                    target="_blank"
-                  ></a>
-                  <a
-                    href="https://vk.com/domoratskiymaxim"
-                    class="social__link vk"
-                    target="_blank"
-                  ></a>
-                  <a
-                    href="https://www.instagram.com/domoratskiy_maxim/"
-                    class="social__link inst"
-                    target="_blank"
-                  ></a>
+              <div class="info__social social">
+                <div class="social__items">
+                  <div class="social__item">
+                    <a href="mailto:maxdom2002@mail.ru" class="social__label"
+                      >maxdom2002@mail.ru</a
+                    >
+                    <div class="social__links">
+                      <a
+                        href="mailto:maxdom2002@mail.ru"
+                        class="social__link mailru"
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="social__item">
+                    <a
+                      href="mailto:
+					 maxdom969@gmail.com
+					 "
+                      class="social__label"
+                    >
+                      maxdom969@gmail.com
+                    </a>
+                    <div class="social__links">
+                      <a
+                        href="mailto:
+						maxdom969@gmail.com
+						"
+                        class="social__link gmail"
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="social__item">
+                    <a href="tel:+79135329160" class="social__label"
+                      >+7 (913) 532-91-60</a
+                    >
+                    <div class="social__links">
+                      <a
+                        href="https://t.me/MaxDom2002"
+                        class="social__link telegram"
+                        target="_blank"
+                      ></a>
+                      <a
+                        href="https://api.whatsapp.com/send?phone=79135329160"
+                        class="social__link whatsapp"
+                        target="_blank"
+                      ></a>
+                      <a
+                        href="https://vibr.cc/79135329160"
+                        class="social__link viber"
+                        target="_blank"
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="social__item">
+                    <div class="social__label social__label_notlink">
+                      DomoratskiyMaxim
+                    </div>
+                    <div class="social__links" data-lang-social>
+                      <a
+                        href="https://www.facebook.com/DomoratskiyMaxim"
+                        class="social__link facebook"
+                        target="_blank"
+                      ></a>
+                      <a
+                        href="https://vk.com/domoratskiymaxim"
+                        class="social__link vk"
+                        target="_blank"
+                      ></a>
+                      <a
+                        href="https://www.instagram.com/domoratskiy_maxim/"
+                        class="social__link inst"
+                        target="_blank"
+                      ></a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -277,10 +261,10 @@
             <h2 class="why__title title title_light">Почему именно мы</h2>
             <div class="why__items">
               <div class="why__item item-why">
-                <div class="item-why__image">
-                  <img src="img/why/01.svg" alt="experience" />
-                </div>
-                <div class="item-why__content">
+                <div class="item-why__body">
+                  <div class="item-why__image">
+                    <img src="img/why/01.svg" alt="experience" />
+                  </div>
                   <h3 class="item-why__title">Опыт</h3>
                   <div class="item-why__description">
                     Наша команда работает на рынке международных услуг с 2016
@@ -289,10 +273,10 @@
                 </div>
               </div>
               <div class="why__item item-why">
-                <div class="item-why__image">
-                  <img src="img/why/02.svg" alt="experience" />
-                </div>
-                <div class="item-why__content">
+                <div class="item-why__body">
+                  <div class="item-why__image">
+                    <img src="img/why/02.svg" alt="experience" />
+                  </div>
                   <h3 class="item-why__title">Связи</h3>
                   <div class="item-why__description">
                     Мы работаем с самыми высокими семьями ОАЭ
@@ -300,10 +284,10 @@
                 </div>
               </div>
               <div class="why__item item-why">
-                <div class="item-why__image">
-                  <img src="img/why/03.svg" alt="experience" />
-                </div>
-                <div class="item-why__content">
+                <div class="item-why__body">
+                  <div class="item-why__image">
+                    <img src="img/why/03.svg" alt="experience" />
+                  </div>
                   <h3 class="item-why__title">Имя</h3>
                   <div class="item-why__description">
                     Имя и доверительные отношения на Востоке - это самое главное
@@ -380,7 +364,7 @@
         <section class="section section_dark question" id="question">
           <div class="container question__container">
             <h2 class="question__title title title_light">Вопрос</h2>
-            <h3 class="question__subtitle">
+            <h3 class="question__subtitle subtitle">
               Задайте вопрос и получите бесплатную консультацию онлайн
             </h3>
             <div class="question__form form">
@@ -417,7 +401,7 @@
                     <div class="form__error">Ошибка</div>
                   </div>
                 </div>
-                <div class="form__message">
+                <div class="form__item">
                   <label for="msg" class="form__label">Сообшение</label>
                   <textarea
                     id="msg"

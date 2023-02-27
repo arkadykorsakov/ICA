@@ -12,6 +12,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
     <title>ICA | Главная</title>
     <link rel="icon" href="favicon/favicon.ico" type="image/x-icon" />
     <link
@@ -50,48 +55,34 @@
                   <a href="about.html" class="menu__link">О нас</a>
                 </li>
                 <li class="menu__item">
-                  <a href="" class="menu__link">Фотогалерея</a>
-                </li>
-                <li class="menu__item">
                   <a href="siberian_falconry.html" class="menu__link"
                     >Siberian Falconry
                   </a>
                 </li>
                 <li class="menu__item">
-                  <a href="" class="menu__link">Инвестиции</a>
+                  <a href="investitions.html" class="menu__link">Инвестиции</a>
                 </li>
                 <li class="menu__item">
                   <a href="services.html" class="menu__link">Услуги </a>
                 </li>
               </ul>
             </nav>
-            <div class="menu__select-lang select">
-              <div class="select__label">
+            <div class="menu__lang select">
+              <button class="select__label">
                 <div class="select__title">RU</div>
                 <span class="select__arrow"></span>
-              </div>
-              <div class="select__options">
-                <div class="select__option option">
-                  <label for="ru" class="option__label">RU</label>
-                  <input
-                    type="radio"
-                    class="option__input"
-                    name="language"
-                    value="ru"
-                    id="ru"
-                  />
-                </div>
-                <div class="select__option option">
-                  <label for="en" class="option__label">EN</label>
-                  <input
-                    type="radio"
-                    class="option__input"
-                    name="language"
-                    value="en"
-                    id="en"
-                  />
-                </div>
-              </div>
+              </button>
+              <ul class="select__options">
+                <li class="select__option" data-value="ru">RU</li>
+                <li class="select__option" data-value="en">EN</li>
+              </ul>
+              <input
+                type="text"
+                name="lang"
+                value="ru"
+                class="select__input"
+                id="lang"
+              />
             </div>
             <button class="menu__icon icon-menu">
               <span></span>
@@ -103,7 +94,7 @@
         <section class="section section_dark main-about">
           <div class="main-about__container container">
             <div class="main-about__content">
-              <h2 class="main-about__title title title_lighter">
+              <h2 class="main-about__title title title_lighter" data-lang-title>
                 Международное IR-Агентство Инвестиционных Коммуникаций «ICA»
               </h2>
               <div class="main-about__description">
@@ -139,57 +130,78 @@
             </div>
           </div>
         </section>
-        <section class="section section_dark question" id="question">
-          <div class="container question__container">
-            <h2 class="question__title title title_light">Вопрос</h2>
-            <h3 class="question__subtitle">
-              Задайте вопрос и получите бесплатную консультацию онлайн
-            </h3>
-            <div class="question__form form">
-              <form action="#" method="POST" class="form__body" id="form">
-                <div class="form__items">
-                  <div class="form__item">
-                    <label for="name" class="form__label">Имя</label>
-                    <input
-                      id="name"
-                      type="text"
-                      class="form__input _req"
-                      name="name"
-                    />
-                    <div class="form__error">Ошибка</div>
+        <section class="section section_dark gallery">
+          <div class="container gallery__container">
+            <h2 class="gallery__title title title_light">#Фотогалерея</h2>
+            <div class="gallery__slider">
+              <div class="swiper image-slider">
+                <div class="swiper-wrapper image-slider__wrapper">
+                  <div
+                    class="swiper-slide image-slider__slide"
+                    data-hash="slide1"
+                  >
+                    <a
+                      data-fslightbox
+                      href="img/gallery/1.jpg"
+                      class="image-slider__image swiper-zoom-container"
+                    >
+                      <img src="img/gallery/1.jpg" alt="" class="swiper-lazy" />
+                    </a>
                   </div>
-                  <div class="form__item">
-                    <label for="email" class="form__label">Email</label>
-                    <input
-                      id="email"
-                      type="text"
-                      class="form__input _req _email"
-                      name="email"
-                    />
-                    <div class="form__error">Ошибка</div>
+                  <div
+                    class="swiper-slide image-slider__slide"
+                    data-hash="slide2"
+                  >
+                    <a
+                      data-fslightbox
+                      href="img/gallery/2.jpg"
+                      class="image-slider__image swiper-zoom-container"
+                    >
+                      <img src="img/gallery/2.jpg" alt="" class="swiper-lazy" />
+                    </a>
                   </div>
-                  <div class="form__item">
-                    <label for="tel" class="form__label">Телефон</label>
-                    <input
-                      id="tel"
-                      type="text"
-                      class="form__input _req _tel"
-                      name="tel"
-                    />
-                    <div class="form__error">Ошибка</div>
+                  <div
+                    class="swiper-slide image-slider__slide"
+                    data-hash="slide3"
+                  >
+                    <a
+                      data-fslightbox
+                      href="img/gallery/3.jpg"
+                      class="image-slider__image swiper-zoom-container"
+                    >
+                      <img src="img/gallery/3.jpg" alt="" class="swiper-lazy" />
+                    </a>
+                  </div>
+                  <div
+                    class="swiper-slide image-slider__slide"
+                    data-hash="slide4"
+                  >
+                    <a
+                      data-fslightbox
+                      href="img/gallery/4.jpg"
+                      class="image-slider__image swiper-zoom-container"
+                    >
+                      <img src="img/gallery/4.jpg" alt="" class="swiper-lazy" />
+                    </a>
+                  </div>
+                  <div
+                    class="swiper-slide image-slider__slide"
+                    data-hash="slide5"
+                  >
+                    <a
+                      data-fslightbox
+                      href="img/gallery/5.jpg"
+                      class="image-slider__image swiper-zoom-container"
+                    >
+                      <img src="img/gallery/5.jpg" alt="" class="swiper-lazy" />
+                    </a>
                   </div>
                 </div>
-                <div class="form__message">
-                  <label for="msg" class="form__label">Сообшение</label>
-                  <textarea
-                    id="msg"
-                    class="form__input _req"
-                    name="msg"
-                  ></textarea>
-                  <div class="form__error">Ошибка</div>
-                </div>
-                <button class="btn btn_transparent">Отправить</button>
-              </form>
+              </div>
+              <div class="swiper-navigation">
+                <button id="swiperPrev" class="swiper-button-prev"></button>
+                <button id="swiperNext" class="swiper-button-next"></button>
+              </div>
             </div>
           </div>
         </section>
@@ -235,6 +247,8 @@
         </div>
       </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/fslightbox.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
