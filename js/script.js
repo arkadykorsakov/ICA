@@ -79,7 +79,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   async function formSend(e) {
-    console.log(e)
     e.preventDefault()
 
     let error = formValidate(form)
@@ -88,7 +87,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (error === 0) {
       document.querySelector('.question').classList.add('_sending')
-
       let response = await fetch('sendmail.php', {
         method: 'POST',
         body: formData
@@ -96,7 +94,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
       if (response.ok) {
         let result = await response.json()
-        alert(result.message)
+        //   alert(result.message)
+        console.log(result)
         form.reset()
         document.querySelector('.question').classList.remove('_sending')
       } else {
@@ -114,8 +113,6 @@ document.addEventListener('DOMContentLoaded', function () {
       const input = formReq[index]
       const formItem = input.closest('.form__item')
       const formError = formItem.querySelector('.form__error')
-
-      console.log(formError)
 
       formRemoveError(input)
       formError.innerHTML = ''
