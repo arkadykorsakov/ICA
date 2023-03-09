@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>ICA | Siberian Falconry</title>
+    <title>ICA</title>
     <link rel="icon" href="favicon/favicon.ico" type="image/x-icon" />
     <link
       rel="apple-touch-icon"
@@ -41,25 +41,7 @@
           </a>
           <div class="header__menu menu">
             <nav class="menu__body">
-              <ul class="menu__list">
-                <li class="menu__item">
-                  <a href="index.html" class="menu__link">Главная </a>
-                </li>
-                <li class="menu__item">
-                  <a href="about.html" class="menu__link">О нас</a>
-                </li>
-                <li class="menu__item">
-                  <a href="siberian_falconry.html" class="menu__link"
-                    >Siberian Falconry
-                  </a>
-                </li>
-                <li class="menu__item">
-                  <a href="investitions.html" class="menu__link">Инвестиции</a>
-                </li>
-                <li class="menu__item">
-                  <a href="services.html" class="menu__link">Услуги </a>
-                </li>
-              </ul>
+              <ul class="menu__list" data-lang-menu></ul>
             </nav>
             <div class="menu__lang select">
               <button class="select__label">
@@ -73,7 +55,7 @@
               <input
                 type="text"
                 name="lang"
-                value="ru"
+                value=""
                 class="select__input"
                 id="lang"
               />
@@ -88,10 +70,10 @@
         <section class="section section_dark main-siberian">
           <div class="main-siberian__container container">
             <div class="main-siberian__content">
-              <h2 class="main-siberian__title title title_lighter">
-                Открытие соколиного питомника и центра соколиной охоты Siberian
-                Falconry в Красноярском крае (2020 - 2023)
-              </h2>
+              <h2
+                class="main-siberian__title title title_lighter"
+                data-lang-siberianTitle
+              ></h2>
             </div>
             <div class="main-siberian__image">
               <img
@@ -103,18 +85,11 @@
         </section>
         <section class="section siberian-falconry">
           <div class="siberian-falconry__container container">
-            <h2 class="siberian-falconry__title title">Siberian Falconry</h2>
-            <div class="siberian-falconry__content">
-              Сокол - показатель элитарности и верх престижа для любого
-              арабского шейха. Сокол является признанным символом Объединенных
-              Арабских Эмиратов. Сокол изображен на государственном гербе ОАЭ и
-              на бумажных купюрах. Семь Эмиратов символизируют семь перьев
-              хвостового оперения сокола. Наш соколиный питомник является
-              уникальным инструментом для выстраивания любых деловых и личных
-              отношений с арабскими инвесторами и предпринимателями, вплоть до
-              самого высокого уровня. Что позволяет нашему агентству достигать
-              успеха в решении любых вопросов для наших клиентов.
-            </div>
+            <h2 class="siberian-falconry__title title">«Siberian Falconry»</h2>
+            <div
+              class="siberian-falconry__content"
+              data-lang-siberianFalconryContent
+            ></div>
             <div class="siberian-falconry__images">
               <div class="siberian-falconry__image">
                 <img
@@ -139,10 +114,10 @@
         </section>
         <section class="section section_dark participation">
           <div class="participation__container container">
-            <h3 class="participation__title title title_lighter">
-              участие в крупнейшем международном фестивале соколов имени короля
-              абдулазиза в саудовской аравии
-            </h3>
+            <h3
+              class="participation__title title title_lighter"
+              data-lang-participationTitle
+            ></h3>
             <div class="participation__images">
               <div class="participation__image">
                 <img
@@ -169,36 +144,20 @@
       <footer class="footer">
         <div class="footer__contacts contacts">
           <div class="contacts__container container">
-            <h2 class="contacts__title title">Контакты</h2>
+            <h2 class="contacts__title title" data-lang-contactsTitle></h2>
             <div class="contacts__items">
-              <div class="contacts__item item-contacts">
-                <h3 class="item-contacts__title">Адрес</h3>
-                <div class="item-contacts__info">
-                  <p>
-                    18th Floor, Office No. 1805, ADCP Tower D, Building No. 21,
-                    Al
-                  </p>
-                  <p>Danah Area, Abu Dhabi, UAE</p>
-                </div>
-              </div>
-              <div class="contacts__item item-contacts">
-                <h3 class="item-contacts__title">Время работы</h3>
-                <div class="item-contacts__info">
-                  <p>Пн—Пт: 10:00—19:00</p>
-                  <p>Сб—Вс: выходной</p>
-                </div>
-              </div>
-              <div class="contacts__item item-contacts">
-                <h3 class="item-contacts__title">Связаться</h3>
-                <div class="item-contacts__info">
-                  <a href="tel:+79135329160" class="item-contacts__link">
-                    т. +7 (913) 532-91-60</a
-                  >
-                  <a href="tel:+79135329160" class="item-contacts__link">
-                    ica.biz.uae@gmail.com
-                  </a>
-                </div>
-              </div>
+              <div
+                class="contacts__item item-contacts"
+                data-lang-contactsAddress
+              ></div>
+              <div
+                class="contacts__item item-contacts"
+                data-lang-contactsTime
+              ></div>
+              <div
+                class="contacts__item item-contacts"
+                data-lang-contactsContact
+              ></div>
             </div>
           </div>
         </div>

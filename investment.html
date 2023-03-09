@@ -67,26 +67,37 @@
         </div>
       </header>
       <main class="page">
-        <section class="section section_light services">
-          <div class="services__container container">
-            <h2 class="services__title title" data-lang-servicesTitle></h2>
+        <section class="section section_light investment">
+          <div class="investment__container container">
+            <h2 class="investment__title title" data-lang-investmentTitle>
+              Инвестиции
+            </h2>
             <h3
-              class="services__subtitle subtitle"
-              data-lang-servicesSubtitle
+              class="investment__subtitle subtitle"
+              data-lang-investmentSubtitle
             ></h3>
-            <div class="services__items items" data-lang-servicesItems></div>
+            <div class="investment__items">
+              <div
+                class="investment__item item-investment"
+                data-lang-investmentIndustrial
+              ></div>
+              <div
+                class="investment__item item-investment"
+                data-lang-investmentInnovative
+              ></div>
+              <div
+                class="investment__item item-investment"
+                data-lang-investmentOpening
+              ></div>
+            </div>
           </div>
         </section>
         <section class="section section_dark question" id="question">
           <div class="container question__container">
             <h2
-              class="question__title title title_light"
+              class="question__title question__title_margin title title_light"
               data-lang-questionTitle
             ></h2>
-            <h3
-              class="question__subtitle subtitle"
-              data-lang-questionSubtitle
-            ></h3>
             <div class="question__form form">
               <form action="#" method="POST" class="form__body" id="form">
                 <div class="form__items">
@@ -115,11 +126,9 @@
                     <div class="form__error"></div>
                   </div>
                   <div class="form__item">
-                    <label
-                      for="tel"
-                      class="form__label"
-                      data-lang-inputTel
-                    ></label>
+                    <label for="tel" class="form__label" data-lang-inputTel
+                      >Телефон</label
+                    >
                     <input
                       id="tel"
                       type="text"
@@ -129,53 +138,11 @@
                     <div class="form__error"></div>
                   </div>
                 </div>
-                <div class="form__item">
-                  <label class="form__label" data-lang-inputService
-                    >Услуга</label
-                  >
-                  <div class="form__select select">
-                    <button class="select__label form__input" type="button">
-                      <div class="select__title" data-lang-inputSelect></div>
-                      <span class="select__arrow"></span>
-                    </button>
-                    <ul class="select__options" data-lang-serviceOptions></ul>
-                    <input
-                      type="text"
-                      name="service"
-                      value=""
-                      class="select__input _req"
-                    />
-                  </div>
-                  <div class="form__error"></div>
-                </div>
                 <button class="btn btn_transparent" data-lang-inputBtn>
                   Отправить
                 </button>
               </form>
             </div>
-          </div>
-        </section>
-        <section class="section partners">
-          <div class="partners__container container">
-            <h2 class="partners__title title" data-lang-partnersTitle></h2>
-            <div class="partners__items items">
-              <div class="partners__item item" data-lang-partnersCG></div>
-              <div class="partners__item item" data-lang-partnersAI></div>
-              <div class="partners__item item" data-lang-partnersSF></div>
-              <div class="partners__item item" data-lang-partnersARIF></div>
-            </div>
-          </div>
-        </section>
-        <section class="section section_light services-partners">
-          <div class="services-partners__container container">
-            <h2
-              class="services-partners__title title"
-              data-lang-servicePartnersTitle
-            ></h2>
-            <div
-              class="services-partners__items items"
-              data-lang-servicePartnersItems
-            ></div>
           </div>
         </section>
       </main>

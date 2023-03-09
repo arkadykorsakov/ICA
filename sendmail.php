@@ -18,8 +18,8 @@ if (!empty($_POST["tel"])) {
 	$text .= "<b>Телефон:</b> " . $_POST["tel"] . "\n";
 }
 
-if (!empty($_POST["msg"])) {
-	$text .= "<b>Сообщение:</b> " . $_POST["msg"] . "\n";
+if (!empty($_POST["service"])) {
+	$text .= "<b>Услуга:</b> " . $_POST["service"] . "\n";
 }
 
 $param = [
@@ -33,7 +33,7 @@ $url = "https://api.telegram.org/bot" . $tg_bot_token . "/sendMessage?" . http_b
 $sendToTelegram = fopen($url, "r");
 
 if ($sendToTelegram) {
-	echo 'Success';
+	return true;
 } else {
-	echo "Error";
+	return false;
 }
