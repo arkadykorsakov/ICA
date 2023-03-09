@@ -716,7 +716,7 @@ function checkPagePathName() {
     }
     return
   }
-  if (currentPath === '/about.html') {
+  if (currentPath === '/ICA/about.html') {
     currentText = {
       ...currentText,
       aboutTitle: {
