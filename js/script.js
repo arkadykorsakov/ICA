@@ -323,43 +323,43 @@ function checkPagePathName() {
     menu: {
       ru: `
 			<li class="menu__item">
-				<a href="/" class="menu__link">
+				<a href="/ICA/" class="menu__link">
 					Главная
 				</a>
 			</li>
 			<li class="menu__item">
-				<a href="/about.html" class="menu__link">О нас</a>
+				<a href="/ICA/about.html" class="menu__link">О нас</a>
 			</li>
 			<li class="menu__item">
-				<a href="/siberian_falconry.html" class="menu__link"
+				<a href="/ICA/siberian_falconry.html" class="menu__link"
 				>Siberian Falconry
 				</a>
 			</li>
 			<li class="menu__item">
-				<a href="/investment.html" class="menu__link">Инвестиции</a>
+				<a href="/ICA/investment.html" class="menu__link">Инвестиции</a>
 			</li>
 			<li class="menu__item">
-				<a href="/services.html" class="menu__link">Услуги</a>
+				<a href="/ICA/services.html" class="menu__link">Услуги</a>
 			</li>`,
       en: `
 			<li class="menu__item">
-				<a href="/" class="menu__link">
+				<a href="/ICA/" class="menu__link">
 				Homepage
 				</a>
 			</li>
 			<li class="menu__item">
-				<a href="/about.html" class="menu__link">About us</a>
+				<a href="/ICA/about.html" class="menu__link">About us</a>
 			</li>
 			<li class="menu__item">
-				<a href="/siberian_falconry.html" class="menu__link"
+				<a href="/ICA/siberian_falconry.html" class="menu__link"
 				>Siberian Falconry
 				</a>
 			</li>
 			<li class="menu__item">
-				<a href="/investment.html" class="menu__link">Investment</a>
+				<a href="/ICA/investment.html" class="menu__link">Investment</a>
 			</li>
 			<li class="menu__item">
-				<a href="/services.html" class="menu__link">Services </a>
+				<a href="/ICA/services.html" class="menu__link">Services </a>
 			</li>
 			`
     },
@@ -537,7 +537,7 @@ function checkPagePathName() {
     }
   }
 
-  if (currentPath === '/' || currentPath === '/index.html') {
+  if (currentPath === '/ICA/' || currentPath === '/ICA/index.html') {
     currentText = {
       ...currentText,
       homeTitle: {
@@ -758,7 +758,7 @@ function checkPagePathName() {
     }
     return
   }
-  if (currentPath === '/siberian_falconry.html') {
+  if (currentPath === '/ICA/siberian_falconry.html') {
     currentText = {
       ...currentText,
       siberianTitle: {
@@ -789,7 +789,7 @@ function checkPagePathName() {
     }
     return
   }
-  if (currentPath === '/investment.html') {
+  if (currentPath === '/ICA/investment.html') {
     currentText = {
       ...currentText,
       investmentTitle: {
@@ -909,7 +909,7 @@ function checkPagePathName() {
     }
   }
 
-  if (currentPath === '/services.html') {
+  if (currentPath === '/ICA/services.html') {
     currentText = {
       ...currentText,
       questionTitle: {
