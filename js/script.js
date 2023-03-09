@@ -537,7 +537,7 @@ function checkPagePathName() {
     }
   }
 
-  if (currentPath === '/') {
+  if (currentPath === '/' || currentPath === '/index.html') {
     currentText = {
       ...currentText,
       homeTitle: {
